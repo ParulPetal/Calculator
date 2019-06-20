@@ -1,0 +1,31 @@
+
+<br/><h3>Basic Calculator using Angular</h3> <br/> <br/>
+
+
+<div class="card  text-center">
+  <div class="card-header "><h4>Calculator</h4></div>
+      <div class="card-body">
+          <div class="form-group d-flex flex-row">
+            <input [(ngModel)]="num1" type="number" name="num1" class="form-control"> 
+
+            <input [(ngModel)]="num2" type="number" name="num2" class="form-control">
+             </div>
+          <div class="d-flex flex-row justify-content-between"> 
+            <button class="btn btn-primary" (click)="add()" id="1" > ADDITION </button> 
+            <button class="btn btn-primary" (click)="sub()" id="2" > SUBTRACTION </button> 
+            <button class="btn btn-primary" (click)="mul()" id="3" > MULTIPLICATION</button> 
+            <button class="btn btn-primary" (click)="divide()" id="4">  DIVISION </button> 
+
+          </div>
+         </div>
+
+
+      <div class="card-footer">
+
+          
+      <h4> The sum/sub/div/mul of {{num1}} and {{num2}} is {{result}}.</h4> 
+      
+
+    </div>
+</div>
+
